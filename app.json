@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index",
+    "pages/player/index",
+    "pages/player/player",
+    "pages/vod/index",
+    "pages/vod/player"
+  ],
+  "window": {
+    "navigationBarTitleText": "微吼云推流Demo",
+    "navigationStyle": "custom"
+  },
+  "networkTimeout": {
+    "request": 30000,
+    "downloadFile": 30000
+  },
+  "debug": true
+}

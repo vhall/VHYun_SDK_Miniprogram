@@ -1,0 +1,28 @@
+<!--pages/player/player.wxml-->
+<page style="position: relative;top:32px">
+  <view class="container" >
+    <live-player 
+    style="width:100%;height:{{playerHeight}}px"
+    id="live-player"
+    src="{{videoUrl}}"
+    mode="live"
+    muted="{{muted}}"
+    autoplay='true'
+    bindstatechange='onStateChange'
+    >
+    <cover-view class="btns-box">
+    <cover-view bindtap="onChangeScreen" class='video-fullscreen'>{{fullScreen}}</cover-view>
+    </cover-view>
+      <cover-view class="back-btn-area" bindtap="goback" >
+        <cover-image class="back-btn" src="https://t-static01-open.e.vhall.com/jssdk/vhall-jssdk-live-stream/test/images/goback.png"></cover-image>
+      </cover-view>
+
+      <cover-view bindtap="switchQuality" class='video-quality'>{{quality}}</cover-view>
+      <cover-view style='display:{{qualitySelectorDisplay}}' class="quality-selector" >
+        <cover-view wx:for="{{qualityData}}" wx:for-index="idx" wx:for-item="itemName" class="quality-item" bindtap="qualityClick" data-index="{{idx}}" data-item="{{itemName}}" >{{qualitys[itemName]}}</cover-view>
+      </cover-view>
+    </live-player>
+  </view>
+</page>
+
+

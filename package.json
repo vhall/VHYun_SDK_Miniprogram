@@ -1,0 +1,11 @@
+{
+  "name": "publisher-for-miniprogram",
+  "version": "1.0.0",
+  "description": "微吼云小程序Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xd.liumail@gmail.com",
+  "license": "ISC"
+}
