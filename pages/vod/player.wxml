@@ -4,13 +4,12 @@
     <video
       style="width:100%;height:{{playerHeight}}px;" 
       id="live-player" 
-      src="{{videoUrl}}" 
-      mode="live" 
+      src="{{videoUrl}}"
       muted="{{muted}}"
-      autoplay='true'
+      autoplay="true"
       bindtimeupdate="onTimeUpdata"
-      binderror='onError'
-      bindprogress='onProgress'
+      binderror="onError"
+      bindprogress="onProgress"
       initial-time="{{initTime}}"
     >
       <cover-view class="back-btn-area" bindtap="goback" >

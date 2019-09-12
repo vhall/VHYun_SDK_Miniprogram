@@ -1,6 +1,6 @@
 // pages/player/player.js
 
-let videoJs = require('../vplayer/video.min.js');
+import { videoJs } from '../sdk/vhall-mpsdk-player-0.1.5'
 let v = null;
 
 
@@ -156,6 +156,16 @@ Page({
       icon: 'none',
       duration: 3000
     })
+  },
+
+  // 网络状态变更
+  onNetstatus: function (e) {
+    if (!this.player) {
+      return;
+    }
+
+    // 状态传入播放器
+    this.player.onNetStatus(e);
   },
 
   goback: function () {

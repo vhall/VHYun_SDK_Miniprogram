@@ -1,18 +1,29 @@
 {
 	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": [
+			{
+				"type": "folder",
+				"value": "pages\node_modules"
+			}
+		]
+	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false
+		"autoAudits": false,
+		"checkInvalidKey": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.9.1",
-	"appid": "wxc0ea3ceee46912ee",
-	"projectname": "publisher-for-miniprogram",
+	"libVersion": "2.8.1",
+	"appid": "wxd20334d15d7bb3d6",
+	"projectname": "vhall-mpsdk-player",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -31,45 +42,8 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
-			"list": [
-				{
-					"id": -1,
-					"name": "player",
-					"pathName": "pages/player/player",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "playerIndex",
-					"pathName": "pages/player/index",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "index",
-					"pathName": "pages/index",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "pusher/vertical",
-					"pathName": "pages/pusher/vertical",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "video-test",
-					"pathName": "pages/player/video-test",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "pusherIndex",
-					"pathName": "pages/pusher/index",
-					"query": ""
-				}
-			]
+			"current": -1,
+			"list": []
 		}
 	}
 }

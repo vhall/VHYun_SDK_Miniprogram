@@ -7,12 +7,13 @@
     "pages/vod/player"
   ],
   "window": {
-    "navigationBarTitleText": "微吼云推流Demo",
+    "navigationBarTitleText": "微吼云播放器小程序SDK-Demo",
     "navigationStyle": "custom"
   },
   "networkTimeout": {
     "request": 30000,
     "downloadFile": 30000
   },
-  "debug": true
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
 }

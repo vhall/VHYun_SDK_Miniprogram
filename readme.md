@@ -1,4 +1,4 @@
-## 微吼云小程序SDK
+## 微吼云播放器小程序SDK
 
 ### 结构说明
 
@@ -9,19 +9,19 @@
 #### 目录
 - player目录 直播观看demo
 - vod目录 回放点播观看demo
-- vplayer目录 vhall播放器sdk
+- sdk目录 微吼云播放器小程序SDK
 - index 主页面文件
 
 
 #### player 与 vod 文件结构
 - index 输入配置页面
-- player 播放页面 （调用vplayer）
+- player 播放页面
 
-### vhall播放器SDK接口使用说明
+### 微吼云播放器小程序SDK接口使用说明
 
 #### 实例化播放器
 <pre><code>
-// 实例化vhall播放器
+// 实例化微吼云小程序播放器
 var vplayer = new videoJs({
   wx: wx, // 微信句柄
   context: this, // 当前页面上下文句柄，用于修改微信播放组件的播放源

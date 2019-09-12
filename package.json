@@ -1,11 +1,11 @@
 {
-  "name": "publisher-for-miniprogram",
+  "name": "vhall-mpsdk-player",
   "version": "1.0.0",
-  "description": "微吼云小程序Demo",
+  "description": "微吼云播放器小程序SDK-Demo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "xd.liumail@gmail.com",
+  "author": "",
   "license": "ISC"
 }

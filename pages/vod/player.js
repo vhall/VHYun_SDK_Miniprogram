@@ -1,6 +1,6 @@
 // pages/player/player.js
 
-let videoJs = require('../vplayer/video.min.js');
+import { videoJs } from '../sdk/vhall-mpsdk-player-0.1.5'
 let v = null;
 
 
@@ -99,6 +99,9 @@ Page({
   onTimeUpdata: function (event) {
     // 保存当前播放时间点，用于点播切换清晰度后从当前时间点开始播放
     this.data.currentTime = event.detail.currentTime;
+    if (this.player) {
+      this.player.onTimeUpdata(event);
+    }
   },
 
   // 播放
@@ -143,7 +146,8 @@ Page({
     this.setData({ quality: this.data.qualitys[_item] });
   },
 
-  onError: function () {
+  onError: function (event) {
+    console.log(event);
     wx.showToast({
       title: '播放失败，请检查视频源是否有效.',
       icon: 'none',
@@ -151,6 +155,9 @@ Page({
     })
   },
 
+  onProgress: function (event) {
+    console.log(event);
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

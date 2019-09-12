@@ -9,6 +9,7 @@
     muted="{{muted}}"
     autoplay='true'
     bindstatechange='onStateChange'
+    bindnetstatus="onNetstatus"
     >
     <cover-view class="btns-box">
     <cover-view bindtap="onChangeScreen" class='video-fullscreen'>{{fullScreen}}</cover-view>
