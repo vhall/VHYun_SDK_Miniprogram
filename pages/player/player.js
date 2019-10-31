@@ -1,6 +1,6 @@
 // pages/player/player.js
 
-import { videoJs } from '../sdk/vhall-mpsdk-player-0.1.5'
+import { videoJs } from '../sdk/vhall-mpsdk-player-0.1.6'
 let v = null;
 
 
